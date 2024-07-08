@@ -1,13 +1,14 @@
+using InfucareRxForm.BusinessLayer.Abstractions;
 using Microsoft.AspNetCore.Mvc;
 
 namespace InfucareRxForm.WebAPI.Controllers;
 
 [Route("api/assessment")]
-public class AssessmentController : ControllerBase
+public class AssessmentController(IAssessmentService assessmentService) : ControllerBase
 {
     [HttpGet]
-    public IActionResult GetPatients()
+    public async Task<IActionResult> GetPatients()
     {
-        return Ok();
+        return Ok(await assessmentService.GetAssessments());
     }
 }

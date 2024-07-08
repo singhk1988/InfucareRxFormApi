@@ -5,6 +5,11 @@
 	<ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+   <ItemGroup>
+     <PackageReference Include="AutoMapper" Version="13.0.1" />
+   </ItemGroup>
+
+
   <ItemGroup>
     <ProjectReference Include="..\InfucareRxForm.DataLayer\InfucareRxForm.DataLayer.csproj" />
     <ProjectReference Include="..\InfucareRxForm.Shared\InfucareRxForm.Shared.csproj" />

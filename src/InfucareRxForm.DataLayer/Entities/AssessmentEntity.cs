@@ -3,7 +3,7 @@
 /// <summary>
 /// Represents an assessment form in the healthcare system.
 /// </summary>
-public class Assessment : BaseEntity
+public class AssessmentEntity : BaseEntity
 {
     /// <summary>
     /// Gets or sets the unique identifier for the assessment.

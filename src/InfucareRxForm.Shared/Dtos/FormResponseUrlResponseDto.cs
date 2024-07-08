@@ -1,9 +1,6 @@
-﻿namespace InfucareRxForm.DataLayer.Entities;
+namespace InfucareRxForm.Shared.Dtos;
 
-/// <summary>
-/// Represents a form response URL in the healthcare system.
-/// </summary>
-public class FormResponseUrl : BaseEntity
+public class FormResponseUrlResponseDto
 {
     /// <summary>
     /// Gets or sets the unique identifier for the form response URL.

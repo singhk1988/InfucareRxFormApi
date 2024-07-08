@@ -1,9 +1,6 @@
-﻿namespace InfucareRxForm.DataLayer.Entities;
+namespace InfucareRxForm.Shared.Dtos;
 
-/// <summary>
-/// Represents a patient in the healthcare system.
-/// </summary>
-public class Patient : BaseEntity
+public class PatientResponseDto
 {
     /// <summary>
     /// Gets or sets the unique identifier for the patient.
