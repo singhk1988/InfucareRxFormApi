@@ -1,4 +1,4 @@
-using InfucareRxForm.Shared.Dtos;
+using InfucareRxForm.Shared.Dtos.Response;
 
 namespace InfucareRxForm.BusinessLayer.Abstractions;
 

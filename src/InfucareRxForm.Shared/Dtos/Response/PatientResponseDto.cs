@@ -1,4 +1,4 @@
-namespace InfucareRxForm.Shared.Dtos;
+namespace InfucareRxForm.Shared.Dtos.Response;
 
 public class PatientResponseDto
 {

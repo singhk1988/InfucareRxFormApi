@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace InfucareRxForm.WebAPI.Controllers;
 
 [Route("api/assessment")]
-public class AssessmentController(IAssessmentService assessmentService) : ControllerBase
+public class AssessmentController(IAssessmentService assessmentService) : BaseController
 {
     [HttpGet]
     public async Task<IActionResult> GetPatients()

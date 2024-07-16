@@ -1,11 +1,11 @@
 using InfucareRxForm.BusinessLayer.Abstractions;
-using InfucareRxForm.Shared.Dtos;
+using InfucareRxForm.Shared.Dtos.Response;
 using Microsoft.AspNetCore.Mvc;
 
 namespace InfucareRxForm.WebAPI.Controllers;
 
 [Route("api/form-response-url")]
-public class FormResponseUrlController(IFormResponseUrlService formResponseUrlService) : ControllerBase
+public class FormResponseUrlController(IFormResponseUrlService formResponseUrlService) : BaseController
 {
     /// <summary>
     /// Allow to pull all formResponseUrls.

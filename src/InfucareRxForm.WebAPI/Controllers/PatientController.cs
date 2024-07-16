@@ -1,11 +1,14 @@
+using FluentValidation;
 using InfucareRxForm.BusinessLayer.Abstractions;
-using InfucareRxForm.Shared.Dtos;
+using InfucareRxForm.Shared.Dtos.Request;
+using InfucareRxForm.Shared.Dtos.Response;
+using InfucareRxForm.WebAPI.Validators;
 using Microsoft.AspNetCore.Mvc;
 
 namespace InfucareRxForm.WebAPI.Controllers;
 
 [Route("api/patient")]
-public class PatientController(IPatientService patientService) : ControllerBase
+public class PatientController(IPatientService patientService) : BaseController
 {
     /// <summary>
     /// Allow to pull all patients.
@@ -15,6 +18,14 @@ public class PatientController(IPatientService patientService) : ControllerBase
     [ProducesResponseType(typeof(PatientResponseDto), StatusCodes.Status200OK)]
     [ProducesResponseType(typeof(void), StatusCodes.Status404NotFound)]
     public async Task<IActionResult> GetPatients()
+    {
+        return Ok(await patientService.GetPatients());
+    }
+    
+    [HttpPost]
+    [ProducesResponseType(typeof(PatientResponseDto), StatusCodes.Status201Created)]
+    [ProducesResponseType(typeof(void), StatusCodes.Status422UnprocessableEntity)]
+    public async Task<IActionResult> CreatePatient([FromBody] PatientCreateRequestDto patientCreateRequestDto)
     {
         return Ok(await patientService.GetPatients());
     }

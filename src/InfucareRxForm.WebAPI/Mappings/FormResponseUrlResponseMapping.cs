@@ -1,6 +1,6 @@
 using AutoMapper;
 using InfucareRxForm.DataLayer.Entities;
-using InfucareRxForm.Shared.Dtos;
+using InfucareRxForm.Shared.Dtos.Response;
 
 namespace InfucareRxForm.WebAPI.Mappings;
 

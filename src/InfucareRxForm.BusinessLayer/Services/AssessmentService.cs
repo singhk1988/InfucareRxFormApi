@@ -2,7 +2,7 @@ using AutoMapper;
 using InfucareRxForm.BusinessLayer.Abstractions;
 using InfucareRxForm.DataLayer.Abstractions;
 using InfucareRxForm.DataLayer.Entities;
-using InfucareRxForm.Shared.Dtos;
+using InfucareRxForm.Shared.Dtos.Response;
 
 namespace InfucareRxForm.BusinessLayer.Services;
 
