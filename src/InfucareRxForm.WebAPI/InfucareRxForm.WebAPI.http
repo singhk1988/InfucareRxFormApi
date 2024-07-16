@@ -1,0 +1,12 @@
+@InfucareRxForm.WebAPI_HostAddress = http://localhost:5000
+
+GET {{InfucareRxForm.WebAPI_HostAddress}}/api/assessment
+Accept: application/json
+###
+
+GET {{InfucareRxForm.WebAPI_HostAddress}}/api/form-response-url
+###
+
+GET{{InfucareRxForm.WebAPI_HostAddress}}/api/patient
+Accept: application/json
+###
