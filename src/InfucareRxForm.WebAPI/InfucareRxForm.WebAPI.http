@@ -1,0 +1,6 @@
+@InfucareRxForm.WebAPI_HostAddress = https://localhost:5091
+
+GET {{InfucareRxForm.WebAPI_HostAddress}}/Welcome
+Accept: application/json
+
+###
